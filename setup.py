@@ -1,4 +1,11 @@
-from distutils.core import setup
+try:
+        from setuptools import setup
+except ImportError:
+        print("+++++++++++ WARNING +++++++++++")
+        print("WARNING: setuptools not installed! This will break automatic installation of requirements!")
+        print("Please install the Python packages python-etcd and arg manually.")
+        print("+++++++++++++++++++++++++++++++++")
+        from distutils.core import setup
 
 setup(
     # Application name:
@@ -27,5 +34,5 @@ setup(
     long_description=open("README.md").read(),
 
     # Dependent packages (distributions)
-    install_requires=[],
+    install_requires=["kafka-python"],
 )

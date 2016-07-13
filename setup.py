@@ -25,11 +25,11 @@ setup(
     include_package_data=False,
 
     # Details
-    url="http://pypi.python.org/pypi/MyApplication_v010/",
+    url="https://github.com/csieber/hvmonitor",
 
     #
     # license="LICENSE.txt",
-    description="Useful towel-related stuff.",
+    description="Resource usage monitor for SDN hypervisors.",
 
     long_description=open("README.md").read(),
 

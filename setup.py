@@ -3,7 +3,7 @@ try:
 except ImportError:
         print("+++++++++++ WARNING +++++++++++")
         print("WARNING: setuptools not installed! This will break automatic installation of requirements!")
-        print("Please install the Python packages python-etcd and arg manually.")
+        print("Please install the Python package python-kafka manually.")
         print("+++++++++++++++++++++++++++++++++")
         from distutils.core import setup
 

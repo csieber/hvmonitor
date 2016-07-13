@@ -3,7 +3,7 @@ try:
 except ImportError:
         print("+++++++++++ WARNING +++++++++++")
         print("WARNING: setuptools not installed! This will break automatic installation of requirements!")
-        print("Please install the Python package python-kafka manually.")
+        print("Please install the Python package python-kafka and pytz manually.")
         print("+++++++++++++++++++++++++++++++++")
         from distutils.core import setup
 
@@ -34,5 +34,5 @@ setup(
     long_description=open("README.md").read(),
 
     # Dependent packages (distributions)
-    install_requires=["kafka-python"],
+    install_requires=["kafka-python", "pytz"],
 )

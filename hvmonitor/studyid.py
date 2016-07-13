@@ -18,6 +18,8 @@ class EtcdID(object):
 
     def __init__(self, etcd_ip):
 
+        import etcd
+
         self._etcd = etcd.Client(host=etcd_ip, port=2379, read_timeout=0)
         self._study_id = "ETCDERROR"
 

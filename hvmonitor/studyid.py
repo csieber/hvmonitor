@@ -1,4 +1,3 @@
-import etcd
 import threading
 import logging
 

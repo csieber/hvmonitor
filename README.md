@@ -1,6 +1,6 @@
 # hvmonitor - Resource usage monitor for SDN hypervisors
 
-A resource monitor for network hypervisors designed to work with in combination with the hvbench framework.
+A resource monitor for network hypervisors designed to work with in combination with the [hvbench](https://github.com/csieber/hvbench) framework.
 
 ## Features
 
